@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Docker 构建中间产物 (build.sh 从 ~/.hermes/hermes-agent rsync 同步，勿提交)
+docker/solver/hermes-src/
+
+# 凭据快照 (含 auth.json，敏感，勿提交)
+cred_snapshots/
+
+# Master 调度器运行产物
+master_state*.json
+master_*.log
+master.log
+master_logs/
+flags.jsonl
+flags*.jsonl
+# 备份/清理产物 (master_state.json.bak_* / flags.jsonl.bak_* / *.old 等)
+master_state*.json*
+flags*.jsonl*
+tests/master_flags_*.jsonl
+challenges/manual_*/
+challenges/attachments/
+challenges/fake/
+tests/master_state_test.json
+tests/master_test.log
+tests/mock_challenges/*.zip
+
+# 临时备份 (崩溃恢复用，不入库)
+.backups/
+
+# 托管镜像构建产物 (含 API key 快照, 不入库)
+docker/hosted/claude-settings.json
+docker/hosted/snap_build/
+ctf-solver-hosted.tar.gz

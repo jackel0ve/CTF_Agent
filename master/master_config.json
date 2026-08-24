@@ -1,0 +1,23 @@
+{
+  "adapter": "none",
+  "backend": "docker",
+  "max_solvers": 3,
+  "max_challenges": 100,
+  "solver_timeout": 3600,
+  "poll_interval": 15,
+  "llm_priority": true,
+  "llm_priority_effort": "low",
+  "submit_min_interval": 10,
+  "max_submit_per_challenge": 3,
+  "dashboard_port": 8081,
+  "docker_image": "ctf-solver:latest",
+  "agent_cli": "claude",
+  "resident": true,
+  "state_file": "master_state.json",
+  "log_file": "master.log",
+  "flags_file": "flags.jsonl",
+  "round_time_base": 1200,
+  "round_time_step": 600,
+  "max_rounds": 5,
+  "platform_max_active": 3
+}

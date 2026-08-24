@@ -1,0 +1,22 @@
+{
+  "adapter": "mock",
+  "backend": "docker",
+  "max_solvers": 3,
+  "max_challenges": 3,
+  "solver_timeout": 1500,
+  "poll_interval": 10,
+  "llm_priority": true,
+  "llm_priority_effort": "low",
+  "submit_min_interval": 10,
+  "max_submit_per_challenge": 3,
+  "docker_image": "ctf-solver:latest",
+  "state_file": "master_state_docker.json",
+  "log_file": "master_docker.log",
+  "dashboard_port": 8081,
+  "resident": false,
+  "round_time_base": 1200,
+  "round_time_step": 600,
+  "max_rounds": 5,
+  "platform_max_active": 3,
+  "agent_cli": "claude"
+}
